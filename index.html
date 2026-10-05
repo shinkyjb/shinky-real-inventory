@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SHINKY REAL -- All Stock</title>
+    <meta
+      name="description"
+      content="Katalog stok akun game SHINKY REAL dengan fitur admin, pencarian dan kalkulator DP."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="top">
+      <div class="wrap">
+        <div class="brand">
+          <div class="logo">
+            <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAQDAwMDAgQDAwMEBAQFBgoGBgUFBgwICQcKDgwPDg4MDQ0PERYTDxAVEQ0NExoTFRcYGRkZDxIbHRsYHRYYGRj/2wBDAQQEBAYFBgsGBgsYEA0QGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBgYGBj/wAARCAB4AHgDASIAAhEBAxEB/8QAHwAAAQUBAQEBAQEAAAAAAAAAAAECAwQFBgcICQoL/8QAtRAAAgEDAwIEAwUFBAQAAAF9AQIDAAQRBRIhMUEGE1FhByJxFDKBkaEII0KxwRVS0fAkM2JyggkKFhcYGRolJicoKSo0NTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqDhIWGh4iJipKTlJWWl5iZmqKjpKWmp6ipqrKztLW2t7i5usLDxMXGx8jJytLT1NXW19jZ2uHi4+Tl5ufo6erx8vP09fb3+Pn6/8QAHwEAAwEBAQEBAQEBAQAAAAAAAAECAwQFBgcICQoL/8QAtREAAgECBAQDBAcFBAQAAQJ3AAECAxEEBSExBhJBUQdhcRMiMoEIFEKRobHBCSMzUvAVYnLRChYkNOEl8RcYGRomJygpKjU2Nzg5OkNERUZHSElKU1RVVldYWVpjZGVmZ2hpanN0dXZ3eHl6goOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4uPk5ebn6Onq8vP09fb3+Pn6/9oADAMBAAIRAxEAPwDg6KKK/rA/NwooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKK0/D/h/VvFPiW00HQ7Rrq+un2xxg4A7lmPZQOSewqKlSNOLnN2S1bfRDjFydluZlFfXXhT9lfwpY2Ecni3UbzV70gF47aQ28Cn0GPnb6kj6CutH7O/wjAx/wi7n63s//wAXXw1fxEyqlNwipS80lb8Wn+B68MjxMld2R8MUV9z/APDPHwj/AOhWb/wNn/8Ai6y/EPwW+BPhfw3eeIPEOlxaZplnGZZ7qfUJ1RF/775JOAAOSSAATWS8Scs/59z+6P8A8kX/AGDiO6/H/I+LKK+lvBHwW0H4ha4vidvB114V8Frzp9ndXEx1DVV7TTBmP2eM8bUHzkckjOB6gP2dvhGD/wAiw5+t9P8A/F1rV8RMspWThO/VWWnk/e3/AC663RKyPEPqvv8A+AfDNFfc/wDwzx8I/wDoVm/8DZ//AIusPxF+zB8PtS0+QaEb/RLvH7uRJ2njz/tI5OR9CDU0vEbK5yUZRnFd2lb8JN/gEsjxCV00/n/wD40orb8XeFNX8FeL7vw5rcSpdWxHzIcpKh5V0PdSP6g8isSvuqNaFaEatN3i1dPumeRKLi3GS1QUUUVoSFFFFABX0v8Ask6PZyXPibX5EDXcPk2UbEfcVgXbH1wv5V80V6v+z98U9L+HHxHuNM8T3cdloOvrFD9vlOI7S7QsIzI3RUkVym48BlTOAcj5HjlVnk9X2Xlf0ur/APB8j1MmUXio83nb1PoD4/8AxX174Z+HtLh8MWNhLqmqSSKlzqAZ4bdEA3NsUguxLDA3AdSTxg/Nv/DRPx43E/8ACXeHh7f2AuB/5Gr7h1TRdB8RWEcOs6Vp+qWwO+NbqFJlBI+8u4Ht3FYn/CsfhvnP/CD+Hf8AwBj/AMK/I8rx2S0aCjjcLKc+r5ml5WSaPpq8MXKd6NRJeif53Pjr/hoz48f9DX4a/wDBB/8Ab6j0rxN8T/i58VvDmn694n0m6vEuCbFLnRxJp9o4VmM5tRIBLKADhnY7c8Ac5+zB8N/h0q4Hgjw7j/rwi/wrlvE3wL8L30X9p+CZJfBPiS3PmWWr6OAvlP6PEco6HkMpHIJGa9NZtw8oz9jhHCbTUW5NpNrR76WfVXa6GHscc2uaomrq+iWn3GLqXhr9oPSdBvNVn+Nvhpo7S3kuGX/hEAAQiljz9o9q+eV/aM+PLID/AMJV4bGQD/yAP/t1fQF78RNZ1j9mPxxF4lsoLLxbocM2jatb25PlNOyhUmizz5cqyK656ZK84zWPa/sm+G3sonn8VaysjIpZVjiABxyB8tZZDSyejTqTzmGt7RtzdFd/C/NfoXjauLlKKwrW2ui+W69Txj/hon48ZH/FW+Hf/BAP/j1fS37P/wASfEvxG8DX9x4rg08ajp92Lc3NhG0UdwpQMG8tmbYwyQQGIPBGOlcsP2SvC2RnxXrePTy4f/ia9g8EeB9B+H3hRNB0CKVYA5lklmbfJNIcZZj64AGAAAAAKef1eHHhrZZBqpda+9ZLrfmZOD+vuf8AtDXL6L9EfPv7XFhbR634V1NQouZobmB/UojIw/Iu35183V6p+0J4+sfHHxkktNGuFuNL0CJtOW4Q5Sa5L7pyp7hSscef7yP6V5XX6jwTGpHJqCqedvTmdvw/A+dzfl+tz5fL77BRRRX1R5oUUUUAFRyrbzQvDMIpI3BVkfBDA9QQeoqVYpJ5FgiBMkhEaAd2JwP1Nfo5pPhjSNO8P2OnHTLNvs1vHDn7OhztUDPT2r5TifienkipxlT5+e+l7aK3k+56WX5fLF8zUrWsfnLo2r+J/DFoLPwp8QfFWgWa/ds7DVW8hP8Adjk3Kv0AFao+IXxUH/NZvGf/AIGQf/Gq/RA6Dop66PYH62yf4Uw+HNAPXQ9NP1tY/wD4mvzifE2STk5Sy2N/VL8on0CwmNSt9Yf3f8E/PWL4gfFmSZUh+MfjWSRjhUS5hcsfQDyuT7V94/DIeKx8I9A/4Ti5e5182im7lljWN2Ykld6qAA+3buwBzngVu2+iaNaTie10mxgkXo8VuisPxAzXLeN/iVpvhe6i8PaVAde8X3q40/w9ZtmaQnpJMRkQQDOWlfAABxubCnwM6zPA4yMY4PCqlbd3u35dEdeFoV4N+1qc3yPHPizepp8/xYvLeNJUkl0G3kj3bRJKpMjKT2OzYD9aydE/bH1Z9etU8V/DK20rR2kC3d9Z60buS2Q9ZBF5K7wvUgHOASMkYOj8a/Dkvgr9nSz07UL1b/XNY10X+rX6rtFzcsju5UfwxrhVReyqo65r5n6HI6193kfDeEz3LlUrNpp2TXlCEW9u8bnj4vMKmCr8sUmn39W/1P0ytbu2vrCG9sriK4tp41limicMkiMMqysOCCCCCK+Sv2jvGXxpsPFNz4Um1Oz8P+Er0MbW50VHF3fw/wASSTsf3TDoyxgHBBDYNVv2cfi8PCOr2/w68S3W3Qb2XZpFzI3FjOx/49mPaJyfk/uudvRlx9O+PfA+j/EHwZcaBq8ZAf54LhV+e3lA+WRfcdx3BI718TDBU8mzRUc1pc0E9d9V0ku68vVPU9aVaWJw/PhpWb/q3k/+HPzqt7eC0tY7a2iSKGJQiRoMBQOgFSVteLPCuseC/Ft34d1yDyrq2bG4A7JUP3ZEPdSOR+IPINYtf0Nh6lOpSjOi04tK1trdLHw01JSanuFFFFbEhRRRQAyVDJC0YlliLDAkhco6H1VhyCOoI6VONU8ZDp8T/iCP+5juf/iqjorzsblOCxzUsVSjNra6udNDGV8OmqU2r9ib+2PG46fFP4h/+FFc/wDxVKNa8cjp8VPiGP8AuYrj/GoKK4v9Vso/6Bofcjf+1cZ/z9f3j5tT8Y3URhvPiZ4/uYj96KXxDc7W+uGFVNPh1HRYZovDnibxHoAuH8y5bSNTltnumHRppAd0hHbcTirFFXDhvK4RcY4eFnv7qIlmOKk7uo/vFe7167K/2z4v8Ta4iA+XHrGqS3axE9Soc8E9M+lJRRXpYTB0MJTVHDwUY9lojmq1p1pc9R3YyaGKeB4Zo1kjdSrK3Qg1MNT8ZAAL8TviCqgYCjxFc4A9PvUyisMblODxzTxVKM2trq9jShi61C6pTav2Fa41a5bfq3iLXNakAwkur30l28Y/uqzkkDPOOmaSiiunDYalhqao0YqMVslsjKpUlVk5zd2wooorcgKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKACiiigAooooAKKKKAP/9k=" alt="Logo SHINKY" />
+          </div>
+          <div>
+            <strong>SHINKY REAL</strong>
+            <span class="mono">ALL STOCK // MANAGEMENT</span>
+          </div>
+        </div>
+        <button class="adm" id="admin-btn" aria-label="Admin tombol">
+          <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+            <path d="m9 12 2 2 4-4"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="wrap">
+          <span class="tag-o mono">PUSAT GAME INDONESIA</span>
+          <h1>STOK AMAN. DEAL NYAMAN.</h1>
+          <p>
+            Katalog akun game pilihan untuk jual dan sewa. Transparan, cepat, dan
+            dikelola langsung oleh admin SHINKY REAL.
+          </p>
+          <div class="hbtns">
+            <a class="btn o" href="#katalog">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="22" x2="18" y1="12" y2="12"></line>
+                <line x1="6" x2="2" y1="12" y2="12"></line>
+                <line x1="12" x2="12" y1="6" y2="2"></line>
+                <line x1="12" x2="12" y1="22" y2="18"></line>
+              </svg>
+              LIHAT STOK
+            </a>
+            <a class="btn" href="https://wa.me/6285641260260?text=Halo%20Admin%20SHINKY%20REAL%2C%20saya%20ingin%20bertanya%20tentang%20stok." target="_blank" rel="noopener">
+              <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              CHAT ADMIN
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk" id="katalog">
+        <div class="wrap">
+          <div class="sechead">
+            <div>
+              <div class="eyebrow">Live Inventory</div>
+              <h2 class="t">Katalog Stok Akun</h2>
+            </div>
+            <span id="count" class="count">0 / 0 STOK TERDETEKSI</span>
+          </div>
+
+          <div class="panel filters">
+            <div>
+              <label for="q">Cari Stok</label>
+              <div class="sw">
+                <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <path d="m21 21-4.3-4.3"></path>
+                </svg>
+                <input id="q" type="search" placeholder="Cari nama akun / spesifikasi..." />
+              </div>
+            </div>
+            <div>
+              <label for="fg">Pilih Game</label>
+              <select id="fg">
+                <option value="">Semua Game</option>
+                <option>Free Fire</option>
+                <option>Mobile Legends</option>
+                <option>TikTok</option>
+                <option>Lainnya</option>
+              </select>
+            </div>
+            <div>
+              <label for="fs">Status Stok</label>
+              <select id="fs">
+                <option value="">Semua Status</option>
+                <option>READY</option>
+                <option>HOLD</option>
+                <option>TERJUAL</option>
+              </select>
+            </div>
+          </div>
+
+          <div id="toolbar" class="bar hidden">
+            <p>MODE ADMIN AKTIF -- data tersimpan di browser ini.</p>
+            <div class="arow">
+              <button class="btn o" id="add-btn">+ TAMBAH STOK</button>
+              <button class="btn" id="pin-set">ATUR PIN</button>
+              <button class="btn" id="reset-btn">RESET DATA</button>
+              <button class="btn" id="exit-btn">KELUAR</button>
+            </div>
+          </div>
+
+          <div id="grid" class="grid"></div>
+          <p id="empty" class="panel empty hidden">Stok tidak ditemukan.</p>
+        </div>
+      </section>
+
+      <section class="blk alt" id="kalkulator">
+        <div class="wrap calcgrid">
+          <div>
+            <div class="eyebrow">Simulasi Cicilan</div>
+            <h2 class="t">Kalkulator DP 30%</h2>
+            <p class="d">
+              Masukkan harga akun untuk melihat nominal DP, sisa pembayaran, dan batas
+              waktu pelunasan.
+            </p>
+          </div>
+
+          <div class="panel" style="padding:20px">
+            <label for="calc">Harga Akun (Rp)</label>
+            <input id="calc" type="number" min="1000" step="1000" value="350000" />
+
+            <div class="rbox">
+              <small>Total Harga</small>
+              <b id="c-total">Rp 350.000</b>
+            </div>
+            <div class="rbox hl">
+              <small>DP 30%</small>
+              <b id="c-dp">Rp 105.000</b>
+            </div>
+            <div class="rbox">
+              <small>Batas Lunas</small>
+              <b id="c-days">23 HARI</b>
+            </div>
+            <p class="note" id="c-rest">
+              Sisa pembayaran Rp 245.000 wajib dilunasi maksimal 23 hari setelah DP masuk.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="blk alt">
+        <div class="wrap trio">
+          <div class="panel rule" style="padding:22px">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M21 7.5V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h3.5"></path>
+              <path d="M16 2v4"></path>
+              <path d="M8 2v4"></path>
+              <path d="M3 10h5"></path>
+              <path d="M17.5 17.5 16 16.3V14"></path>
+              <circle cx="16" cy="16" r="6"></circle>
+            </svg>
+            <h4>Aturan Cicilan</h4>
+            <ul class="tier">
+              <li><span>Rp1.000 – Rp100.000</span><b>7 hari</b></li>
+              <li><span>Rp101.000 – Rp300.000</span><b>16 hari</b></li>
+              <li><span>Rp301.000 – Rp500.000</span><b>23 hari</b></li>
+              <li><span>Rp501.000 ke atas</span><b>31 hari</b></li>
+            </ul>
+          </div>
+
+          <div class="panel rule" style="padding:22px">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"></path>
+              <path d="m15 9-6 6"></path>
+              <path d="M9 9h.01"></path>
+              <path d="M15 15h.01"></path>
+            </svg>
+            <h4>Ketentuan DP</h4>
+            <ul class="rl">
+              <li>DP wajib 30% dari harga akun.</li>
+              <li>Stok berubah menjadi HOLD/DP setelah pembayaran dikonfirmasi admin.</li>
+              <li>Pelunasan mengikuti batas waktu cicilan.</li>
+            </ul>
+          </div>
+
+          <div class="panel rule" style="padding:22px">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"></path>
+              <path d="M12 8v4"></path>
+              <path d="M12 16h.01"></path>
+            </svg>
+            <h4>Pembatalan &amp; Penarikan</h4>
+            <ul class="rl">
+              <li>Pembatalan setelah DP dikonfirmasi tidak dapat dikembalikan.</li>
+              <li>Akun yang ditarik kembali karena melewati jatuh tempo dapat dijual ulang.</li>
+              <li>Pastikan data pesanan sebelum melakukan pembayaran.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="ft">
+      <div class="wrap">
+        <strong>SHINKY REAL</strong>
+        <p>All Stock &amp; Admin Management — Pusat Game Indonesia.</p>
+        <div class="hbtns">
+          <a class="btn o" href="https://wa.me/6285641260260?text=Halo%20Admin%20SHINKY%20REAL%2C%20saya%20ingin%20bertanya%20tentang%20stok." target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+            </svg>
+            CHAT ADMIN
+          </a>
+          <a class="btn" href="https://whatsapp.com/channel/0029Vb9vOrN5vKA3FYyRzQ2b" target="_blank" rel="noopener">
+            <svg class="i" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M4.9 19.1C1 15.2 1 8.8 4.9 4.9"></path>
+              <path d="M7.8 16.2c-2.3-2.3-2.3-6.1 0-8.5"></path>
+              <circle cx="12" cy="12" r="2"></circle>
+              <path d="M16.2 7.8c2.3 2.3 2.3 6.1 0 8.5"></path>
+              <path d="M19.1 4.9C23 8.8 23 15.1 19.1 19"></path>
+            </svg>
+            SALURAN WA
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <div id="modal" class="hidden">
+      <div class="panel mbox">
+        <h3 id="m-title">Edit Stok</h3>
+        <label for="f-name">Nama Akun</label>
+        <input id="f-name" maxlength="80" />
+
+        <label for="f-game">Game</label>
+        <select id="f-game">
+          <option>Free Fire</option>
+          <option>Mobile Legends</option>
+          <option>TikTok</option>
+          <option>Lainnya</option>
+        </select>
+
+        <label for="f-type">Tipe</label>
+        <select id="f-type">
+          <option>Jual</option>
+          <option>Sewa</option>
+        </select>
+
+        <label for="f-price">Harga (Rp)</label>
+        <input id="f-price" type="number" min="0" step="1000" />
+
+        <label for="f-status">Status</label>
+        <select id="f-status">
+          <option>READY</option>
+          <option>HOLD</option>
+          <option>TERJUAL</option>
+        </select>
+
+        <label for="f-spec">Spesifikasi</label>
+        <textarea id="f-spec" rows="3" maxlength="400"></textarea>
+
+        <label for="f-img">Gambar Spesifikasi (maks 6)</label>
+        <label class="btn" id="f-pick" for="f-img" style="width:100%;display:block;text-align:center;cursor:pointer;box-sizing:border-box">
+          + PILIH GAMBAR
+        </label>
+        <input id="f-img" type="file" accept="image/*,.jpg,.jpeg,.png,.webp,.heic" multiple tabindex="-1" style="position:absolute;width:1px;height:1px;opacity:0;overflow:hidden;clip:rect(0 0 0 0)" />
+        <p id="f-info" class="mono" style="margin:6px 0 0;font-size:12px"></p>
+
+        <div id="f-prev"></div>
+        <p id="m-err" class="err"></p>
+
+        <div class="mrow">
+          <button class="btn o" id="m-save">SIMPAN</button>
+          <button class="btn" id="m-cancel">BATAL</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="pinbox" class="hidden">
+      <div class="panel mbox">
+        <h3 id="pin-title">Atur PIN Admin</h3>
+        <p id="pin-hint" class="hint">Minimal 4 karakter. Kosongkan lalu OK untuk menghapus PIN.</p>
+        <input id="pin-in" type="password" inputmode="numeric" autocomplete="off" maxlength="20" placeholder="PIN" />
+        <p id="pin-err" class="err"></p>
+        <div class="mrow">
+          <button class="btn o" id="pin-ok">OK</button>
+          <button class="btn" id="pin-cancel">BATAL</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="lightbox" class="hidden"></div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
